@@ -3,6 +3,8 @@ id: ev0f7
 name: First doc 123
 file_version: 1.0.2
 app_version: 0.8.4-0
+file_blobs:
+  train2/info/views.py: 3b2cf89babcb3108aed6cdd458c568988d2c66a4
 ---
 
 this is the first doc 111 111 222 333 444 5555 666 777
@@ -12,6 +14,26 @@ this is the first doc 111 111 222 333 444 5555 666 777
 # paragraph
 
 this is a new paragreap
+
+<br/>
+
+A very important function
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 train2/info/views.py
+```python
+⬜ 40         return result
+⬜ 41     
+⬜ 42     
+🟩 43     def find_old_route_by_stop_ids(stop_ids):
+🟩 44         old_routes = get_old_routes()
+🟩 45         for old_route in old_routes:
+🟩 46             if old_route['stop_ids'] == stop_ids:
+🟩 47                 return old_route
+🟩 48         return None
+⬜ 49     
+⬜ 50     
+⬜ 51     def find_old_route_by_id(route_id):
+```
 
 <br/>
 
